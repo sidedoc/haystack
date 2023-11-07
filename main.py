@@ -55,6 +55,7 @@ async def upload_file(clean_empty_lines: bool=Form(...),
         clean_header_footer=clean_header_footer,
         split_length=split_length,
         split_overlap=split_overlap,
+        add_page_number=True
     )
     
     docs_default = preprocessor.process([text])
